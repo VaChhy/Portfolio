@@ -318,7 +318,7 @@ app.use((err, req, res, next) => {
   next();
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio server running at http://localhost:${PORT}`);
-  console.log(`Admin panel at http://localhost:${PORT}/admin`);
+app.listen(PORT,"0.0.0.0", () => {
+  console.log(`Portfolio server running on port ${PORT}`);
+  console.log(`Admin panel ${PORT}/admin`);
 });
