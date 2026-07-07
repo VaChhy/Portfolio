@@ -1,0 +1,109 @@
+{
+  "name": "Chhith Vachhy",
+  "title": "Graphic Designer",
+  "bio": "Ambitious graphic designer with a background in IT and software development. Skilled in building brand identity, print, and digital assets, with hands-on experience translating concepts into polished designs using the Adobe Suite. Eager to keep growing professionally while contributing to real-world creative and technical challenges.",
+  "phone": "+855 98 966 486",
+  "website": "https://t.me/chhee07",
+  "location": "467 5MC, Phnom Penh",
+  "photoUrl": "/uploads/7c9a84cf-b223-4d83-9e17-a140eede0527.jpg",
+  "skills": [
+    {
+      "name": "Adobe Photoshop",
+      "level": 90
+    },
+    {
+      "name": "Adobe Illustrator",
+      "level": 85
+    },
+    {
+      "name": "Adobe Premire Pro",
+      "level": 75
+    },
+    {
+      "name": "Microsoft Office",
+      "level": 90
+    },
+    {
+      "name": "UX/UI",
+      "level": 70
+    },
+    {
+      "name": "Frontend Developer",
+      "level": 75
+    }
+  ],
+  "education": [
+    {
+      "degree": "Management Information Systems",
+      "school": "SETEC Institute",
+      "period": "2021 — Present",
+      "description": "Skilled in business technology solutions, data analysis, and IT systems optimization. Proficient in SQL, ERP systems, and Power BI. Experienced in developing cost-effective tech solutions for Cambodian businesses."
+    },
+    {
+      "degree": "High School — Bac II",
+      "school": "Pouk High School",
+      "period": "2017 — 2020",
+      "description": "Finished Bac II at Pouk High School."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Graphic Designer",
+      "company": "Loma Technology",
+      "location": "Phnom Penh",
+      "period": "2024 — Present",
+      "bullets": [
+        "Created logos, game posters, brochures & digital assets while maintaining brand consistency",
+        "Translated concepts into designs using the Adobe Suite (Photoshop, Illustrator, InDesign)",
+        "Delivered multiple projects on deadline with precision"
+      ]
+    },
+    {
+      "role": "Image Editor",
+      "company": "Laudert Media",
+      "location": "Phnom Penh",
+      "period": "2023 — 2024",
+      "bullets": [
+        "Enhanced and retouched images for media campaigns, ensuring high visual standards and alignment with client expectations",
+        "Used advanced photo editing techniques to correct color, lighting, and composition",
+        "Worked closely with the creative team to maintain a cohesive visual style across all projects"
+      ]
+    },
+    {
+      "role": "IT Support & Data Entry",
+      "company": "Sea Games (Short-Term Project)",
+      "location": "Phnom Penh",
+      "period": "2023",
+      "bullets": [
+        "Provided technical support to staff and participants, troubleshooting hardware and software issues",
+        "Managed accurate data entry and database maintenance, improving efficiency in reporting",
+        "Assisted in the setup and maintenance of IT infrastructure during the event"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Touch Menghongly",
+      "position": "Supervisor at Media",
+      "phone": "+855 68 256 168",
+      "telegram": "@Billy31xx"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Khmer",
+      "percent": 100
+    },
+    {
+      "name": "English",
+      "percent": 60
+    }
+  ],
+  "hobbies": [
+    "Traveling",
+    "Gaming",
+    "Music",
+    "Camping",
+    "Editing"
+  ]
+}

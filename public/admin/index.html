@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — CHHITH VACHHY Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-body">
+  <div class="login-card">
+    <p class="frame-index">ADMIN ACCESS</p>
+    <h1 class="login-title">Sign in</h1>
+    <form id="loginForm">
+      <label>Username
+        <input type="text" name="username" autocomplete="username" required>
+      </label>
+      <label>Password
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <p class="error-msg" id="errorMsg" hidden></p>
+      <button type="submit" class="btn-primary">Sign in</button>
+    </form>
+    <a class="back-link" href="/">← back to site</a>
+  </div>
+  <script src="/js/admin-login.js"></script>
+</body>
+</html>

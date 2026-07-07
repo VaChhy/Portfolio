@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="brand" id="brandName">CHHITH<span>VACHHY</span></div>
+  <nav class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+  </nav>
+  <a class="contact-link" id="contactLink" href="tel:+85598966486">Call Me ↗</a>
+</header>
+
+<section class="hero" id="hero">
+  <p class="frame-index">RESUME</p>
+  <div class="hero-top">
+    <div class="hero-text">
+      <h1 class="hero-title" id="profileName">Loading…</h1>
+      <p class="hero-role" id="profileTitle"></p>
+      <p class="hero-sub" id="profileBio"></p>
+      <div class="contact-row" id="profileContact"></div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img id="profilePhoto" class="hero-photo" src="" alt="" hidden>
+    </div>
+  </div>
+
+  <div class="resume-grid">
+    <div class="resume-col">
+      <h2 class="resume-heading">Skills</h2>
+      <div id="skillsList" class="skills-list"></div>
+
+      <h2 class="resume-heading">Education</h2>
+      <div id="educationList" class="timeline-list"></div>
+
+      <h2 class="resume-heading">Languages</h2>
+      <div id="languagesList" class="languages-list"></div>
+    </div>
+
+    <div class="resume-col">
+      <h2 class="resume-heading">Experience</h2>
+      <div id="experienceList" class="timeline-list"></div>
+
+      <h2 class="resume-heading">References</h2>
+      <div id="referencesList" class="references-list"></div>
+
+      <h2 class="resume-heading">Hobbies</h2>
+      <div id="hobbiesList" class="hobbies-list"></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">
+  <p class="frame-index">PORTFOLIO</p>
+  <h2 class="section-title">Selected Work</h2>
+</div>
+
+<main>
+  <section class="gallery" id="gallery">
+    <p class="empty-state" id="emptyState" hidden>No more work uploaded yet. Add pieces from the Vachhy.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>© <span id="year"></span> <span id="footerName"></span> — built frame by frame.</div>
+<!--  <a href="/admin">Admin</a>-->
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-media" id="lightboxMedia"></div>
+  <div class="lightbox-info">
+    <p class="lightbox-cat" id="lightboxCat"></p>
+    <h2 id="lightboxTitle"></h2>
+    <p id="lightboxDesc"></p>
+    <div class="lightbox-tags" id="lightboxTags"></div>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

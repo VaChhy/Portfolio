@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-body dashboard-body">
+
+<header class="admin-header">
+  <div class="brand">CHHITH<span>VACHHY</span> <small>/ ADMIN</small></div>
+  <div class="admin-header-actions">
+    <a href="/" target="_blank" class="link-btn">View site ↗</a>
+    <button id="logoutBtn" class="link-btn">Log out</button>
+  </div>
+</header>
+
+<main class="dashboard-main">
+
+  <section class="panel">
+    <h2 class="panel-title">Edit resume / profile</h2>
+    <p class="hint">This powers the top section of the public site.</p>
+    <form id="profileForm" class="item-form">
+
+      <div class="form-row">
+        <label>Full name
+          <input type="text" id="p-name" name="name" required>
+        </label>
+        <label>Title / role
+          <input type="text" id="p-title" name="title" required>
+        </label>
+      </div>
+
+      <label>Bio
+        <textarea id="p-bio" name="bio" rows="3"></textarea>
+      </label>
+
+      <div class="form-row">
+        <label>Phone
+          <input type="text" id="p-phone" name="phone">
+        </label>
+        <label>Website / Telegram link
+          <input type="text" id="p-website" name="website">
+        </label>
+      </div>
+
+      <label>Location
+        <input type="text" id="p-location" name="location">
+      </label>
+
+      <label>Profile photo <span class="hint">(optional)</span>
+        <input type="file" id="p-photo" name="photo" accept="image/*">
+      </label>
+      <div id="photoPreview" class="file-preview"></div>
+
+      <!-- Skills -->
+      <h3 class="subsection-title">Skills</h3>
+      <div id="skillsRepeater" class="repeater"></div>
+      <button type="button" class="btn-secondary add-row" data-target="skills">+ Add skill</button>
+
+      <!-- Education -->
+      <h3 class="subsection-title">Education</h3>
+      <div id="educationRepeater" class="repeater"></div>
+      <button type="button" class="btn-secondary add-row" data-target="education">+ Add education</button>
+
+      <!-- Experience -->
+      <h3 class="subsection-title">Experience</h3>
+      <div id="experienceRepeater" class="repeater"></div>
+      <button type="button" class="btn-secondary add-row" data-target="experience">+ Add experience</button>
+
+      <!-- References -->
+      <h3 class="subsection-title">References</h3>
+      <div id="referencesRepeater" class="repeater"></div>
+      <button type="button" class="btn-secondary add-row" data-target="references">+ Add reference</button>
+
+      <!-- Languages -->
+      <h3 class="subsection-title">Languages</h3>
+      <div id="languagesRepeater" class="repeater"></div>
+      <button type="button" class="btn-secondary add-row" data-target="languages">+ Add language</button>
+
+      <!-- Hobbies -->
+      <h3 class="subsection-title">Hobbies</h3>
+      <label>Comma-separated list
+        <input type="text" id="p-hobbies" name="hobbies" placeholder="Traveling, Gaming, Music">
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Save profile</button>
+      </div>
+      <p class="error-msg" id="profileError" hidden></p>
+      <p class="success-msg" id="profileSuccess" hidden></p>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title" id="formTitle">Add new piece</h2>
+    <form id="itemForm" class="item-form">
+      <input type="hidden" id="itemId" name="id">
+
+      <div class="form-row">
+        <label>Title
+          <input type="text" id="title" name="title" required>
+        </label>
+        <label>Category
+          <input type="text" id="category" name="category" placeholder="Branding, Illustration, Motion..." required>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Type
+          <select id="type" name="type">
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+          </select>
+        </label>
+        <label>Tags <span class="hint">(comma separated)</span>
+          <input type="text" id="tags" name="tags" placeholder="poster, print, editorial">
+        </label>
+      </div>
+
+      <label>Description
+        <textarea id="description" name="description" rows="3"></textarea>
+      </label>
+
+      <label>Media file <span class="hint">(image or video, max 50MB)</span>
+        <input type="file" id="media" name="media" accept="image/*,video/*">
+      </label>
+
+      <div id="filePreview" class="file-preview"></div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary" id="submitBtn">Add piece</button>
+        <button type="button" class="btn-secondary" id="cancelEditBtn" hidden>Cancel edit</button>
+      </div>
+      <p class="error-msg" id="formError" hidden></p>
+      <p class="success-msg" id="formSuccess" hidden></p>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title">Current work <span id="itemCount" class="hint"></span></h2>
+    <p class="hint">Drag rows to reorder how they appear on the site.</p>
+    <div id="itemList" class="item-list"></div>
+  </section>
+
+</main>
+
+<script src="/js/admin-dashboard.js"></script>
+</body>
+</html>
